@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CS Exam Game - User Scoreboard</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Welcome to CS Exam Game</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    nav {
+      margin: 20px auto;
+    }
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>CS Exam Game - User Scoreboard</h1>
-    <div class="scoreboard">
-      <h2>Scoreboard</h2>
-      <ul id="scoreboard"></ul>
-      <button id="refresh">Refresh</button>
-    </div>
-    <div class="score-form">
-      <h2>Add Score</h2>
-      <label for="student-select">Student:</label>
-      <select id="student-select">
-        <option value="">Select Student</option>
-      </select>
-      <label for="score-source-select">Score Source:</label>
-      <select id="score-source-select">
-        <option value="">Select Source</option>
-        <option value="Space Invaders">Space Invaders</option>
-        <option value="Snake">Snake</option>
-      </select>
-      <input type="number" id="score-input" placeholder="Score">
-      <button id="add-score">Add Score</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+  <h1>Welcome to CS Exam Game</h1>
+  <nav>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="space-invaders.html">Space Invaders</a>
+  </nav>
 </body>
 </html>
