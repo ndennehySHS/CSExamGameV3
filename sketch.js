@@ -155,9 +155,10 @@ function checkPlayerHit() {
         }
     }
 }
+
 function gameOver() {
     noLoop();
-    let playerName = prompt(`Game Over!\nScore = ${score}\nEnter your name:`);
+    let playerName = prompt(`Game Over!\nScore = ${score}\nEnter your name:`).trim();
     if (playerName) {
       // Submit the score to the database.
       fetch(`${API_BASE}/api/score`, {
@@ -186,7 +187,7 @@ function gameOver() {
     } else {
       alert("No name entered, score not submitted.");
     }
-  }
+}
 
 function addBullet() {
     bulletCount++;
